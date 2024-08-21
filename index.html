@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/0f448948d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              secondary: "rgba(171, 239, 95, 0.5)",
+              title: "#212121",
+              subtitle: "#494949",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 ">
+            <div class="flex-1">
+            
+              <a class="btn btn-ghost text-3xl font-bold"><i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-1 -rotate-45"></i> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-bold text-[#737373] ">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex-1 justify-end space-x-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              <a class="btn hidden bg-[#ABEF5F] text-black rounded-3xl md:inline-flex justify-center items-center">Book Consult <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i> </a>
+              <i class="fa-solid fa-bars lg:hidden"></i>
+            </div>
+          </div>
+          <!-- banner -->
+           <div class="flex flex-col justify-center items-center p-14 space-y-4 ">
+            <div>
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="text-center space-y-4 md:space-y-6 lg:space-y-8">
+                <h1 class="font-bold text-3xl md:text-4xl lg:text-6xl text-title">A barn house of this design has a striking appearance</h1>
+                <p class="text-subtitle">Our purpose is to craft spaces that promote well-being and innovation. We blend creativity with functionality, bringing your vision to life.</p>
+                <button class="btn bg-secondary text-xl rounded-3xl">View Details<i class="fa-solid fa-arrow-right secondary rounded-full p-1 -rotate-45 bg-[#ABEF5F]"></i></button>
+            </div>
+           </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
