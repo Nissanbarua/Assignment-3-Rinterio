@@ -356,13 +356,13 @@
                 type="text"
                 name="first_name"
                 placeholder="First Name*"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full rounded-xl"
               />
               <input
                 type="text"
                 name="last_name"
                 placeholder="Last Name*"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full rounded-xl"
               />
             </div>
             <div class="grid grid-cols-2 gap-4">
@@ -370,21 +370,21 @@
                 type="tel"
                 name="phone_number"
                 placeholder="Phone Number*"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full rounded-xl"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email Address*"
-                class="input input-bordered w-full"
+                class="input input-bordered w-full rounded-xl"
               />
             </div>
             <textarea
               name="message"
               placeholder="Write your message here"
-              class="textarea textarea-bordered w-full h-32"
+              class="textarea textarea-bordered w-full h-32 rounded-xl"
             ></textarea>
-            <button type="submit" class="btn bg-[#ABEF5F] w-full mt-4">
+            <button type="submit" class="btn bg-[#ABEF5F] w-full mt-4 rounded-xl">
               Send Mail<i
               class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"
             ></i>
@@ -393,6 +393,29 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center bg-[#1C1C1C] text-neutral-content p-10">
+      <aside>
+        <a class="btn btn-ghost text-3xl font-bold"
+        ><i
+          class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full p-1 -rotate-45"
+        ></i>
+        Rinterio</a>
+        <p class="text-[#737373]">Experience the perfect harmony of rustic charm and contemporary elegance with our unique design approach, where tradition meets innovation</p>
+      </aside>
+      <nav class="grid md:grid-flow-col gap-10">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <a
+      class="btn bg-[#ABEF5F] text-black rounded-3xl inline-flex justify-center items-center"
+      >Book Consult
+      <i
+        class="fa-solid fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"
+      ></i>
+    </a>
+    </footer>
   </body>
 </html>
